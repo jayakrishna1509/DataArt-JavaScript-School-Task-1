@@ -1,0 +1,1 @@
+# DataArt-JavaScript-School-Task-1
