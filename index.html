@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timeline App</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJSTE20VygJsS7qh1Ioj_vaJFITrVpoPHp4le9ZTtt9p-RPLeKmaScTCHda6wC-shHug&usqp=CAU"
@@ -11,7 +12,7 @@
     />
   </head>
   <body>
-    <!-- Header with Logo and Theme Toggle -->
+    <!-- Header -->
     <header>
       <div class="branding">
         <img
@@ -22,6 +23,7 @@
         />
         <h1>Timeline of Computers</h1>
       </div>
+
       <div class="theme-control">
         <button id="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
       </div>
@@ -33,16 +35,15 @@
       </div>
     </header>
 
-    <!-- Navigation / Filter -->
+    <!-- Navigation / Filters -->
     <nav id="filters">
-      <!-- Timeline filters or placeholders will go here -->
+      <!-- Filters or controls can go here -->
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main Timeline Section -->
     <main>
-      <!-- Timeline Section -->
       <section id="timeline">
-        <!-- Example Static Event -->
+        <!-- Sample Timeline Event -->
         <article class="event">
           <h2>
             <time datetime="1977">1977</time> — Introduction of the First
@@ -56,14 +57,17 @@
             <figcaption>
               <p>
                 The first personal computer, introduced in 1977, revolutionised
-                technology.
+                technology and accessibility in computing.
               </p>
             </figcaption>
           </figure>
           <button>Learn More</button>
         </article>
+
+        <!-- More .event articles can be added here -->
       </section>
     </main>
+
     <!-- Footer -->
     <footer>
       <small>&copy; 2025 Timeline App. All rights reserved.</small>
@@ -71,7 +75,7 @@
 
     <!-- Modal Placeholder -->
     <div id="modal">
-      <!-- Future popup content goes here -->
+      <!-- Modal content to be added dynamically -->
     </div>
   </body>
 </html>
