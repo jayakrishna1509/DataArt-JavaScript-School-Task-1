@@ -36,3 +36,23 @@ This is the initial HTML-only structure for the **Timeline of Computers** web ap
 
 - **Semantic HTML Tags**
   - Proper usage of `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<footer>`, and more.
+
+# Task-2: HTML Responsiveness and Styles 
+## Stage 2: CSS Responsive Layout Timeline App
+
+## 📄Description
+A simple and responsive timeline webpage showing important events in the history of computers.
+
+## Features
+
+- Responsive layout (mobile, tablet, desktop)
+- Clean design with event cards
+- Timeline event markers
+- Basic modal placeholder
+- Theme toggle button (not yet functional)
+
+## Technologies
+
+- HTML
+- CSS (Flexbox & Grid)
+
