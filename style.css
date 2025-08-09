@@ -58,6 +58,12 @@ header > div:last-child p {
   overflow-x: auto;
 }
 
+#timeline {
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 /* Navigation (Filters Placeholder) */
 nav#filters {
   margin: 1rem 0;
