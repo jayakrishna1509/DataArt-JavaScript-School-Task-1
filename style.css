@@ -1,0 +1,196 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.branding h1 {
+  font-size: 1.8rem;
+  color: #2a2a2a;
+}
+
+.theme-control {
+  margin-bottom: 1rem;
+}
+
+.theme-control button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Timeline Year Range */
+header > div:last-child p {
+  font-family: monospace;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* Navigation (Filters Placeholder) */
+nav#filters {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: #eee;
+  border-radius: 5px;
+  min-height: 2rem;
+}
+
+/* Main Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Timeline Section */
+#timeline {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Event Styling */
+.event {
+  border-left: 4px solid #007acc;
+  padding-left: 1rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.event::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #007acc;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: -8px;
+  top: 1rem;
+}
+
+.event h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.event time {
+  font-weight: bold;
+  color: #007acc;
+}
+
+.event figure {
+  margin-top: 0.5rem;
+}
+
+.event img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  display: block;
+}
+
+.event figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.event button {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Modal (Base Styles) */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Breakpoints */
+
+/* Tablet */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event {
+    margin-left: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  #timeline {
+    grid-template-columns: repeat(2, 1fr); /* Fewer columns = larger cards */
+    gap: 3rem; /* More spacing between cards */
+  }
+
+  .event {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .event h2 {
+    font-size: 1.6rem;
+  }
+
+  .event img {
+    max-width: 100%; /* Full width within the card */
+  }
+}
